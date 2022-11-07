@@ -1,0 +1,38 @@
+*{
+	box-sizing:border-box;
+	font-family: 'Quicksand', serif;
+}
+h2, ul{
+	margin-left: 30px;
+}
+/*banner*/
+.banner, #nav-banner{
+	margin: 0px;
+	display: flex;
+	text-color:white;
+	width:100%;
+	text-decoration:none;
+	background-color:#2ad4d4;
+	text-shadow: 1px 1px 1px #198080;
+	font-size: 1em;
+}
+#winter-link{
+	font-size:2.25em;
+	text-align:left;
+}
+#about-link, #projects-link, #linkedin-link{
+	color: white;
+	font-size: 1.5em;
+	text-decoration:none;
+	margin-right: 15px;
+}
+.invis-link, .invis-link:hover, .invis-link:focus{
+	color: white;
+	text-decoration:none;
+}
+body {
+  font-size: 16px;
+  color: #000;
+  background-color:white;
+
+}
