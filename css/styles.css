@@ -1,12 +1,14 @@
 *{
 	box-sizing:border-box;
 	font-family: 'Quicksand', serif;
+	padding: 0;
 }
 h2, ul{
 	margin-left: 30px;
 }
 /*banner*/
 .banner, #nav-banner{
+	padding: 0;
 	margin: 0px;
 	display: flex;
 	text-color:white;
@@ -16,9 +18,20 @@ h2, ul{
 	text-shadow: 1px 1px 1px #198080;
 	font-size: 1em;
 }
+.logo{
+	width: 100px;
+	margin-left: 15px;
+}
+#bars{
+	color: white;
+	width: 150%;
+}
 #winter-link{
 	font-size:2.25em;
 	text-align:left;
+}
+#right-elements{
+	float: right;
 }
 #about-link, #projects-link, #linkedin-link{
 	color: white;
