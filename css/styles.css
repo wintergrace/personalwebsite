@@ -1,9 +1,12 @@
+/*define variable*/
 :root{
 	--dark-blue: #198080;
 	--med-blue: #00b8cc;
 	--light-blue: #d9fbff;
 	--text-on-image: #ffffff;
 }
+
+/*general*/
 *{
 	box-sizing:border-box;
 	font-family: 'Quicksand', serif;
@@ -12,9 +15,11 @@
 html body{
 	background-color: var(--light-blue);
 }
-h2, ul{
-	margin-left: 30px;
+.invis-link, .invis-link:hover, .invis-link:focus{
+	color: white;
+	text-decoration:none;
 }
+
 /*banner*/
 .banner, #nav-banner{
 	padding: 0;
@@ -37,10 +42,8 @@ h2, ul{
 	color: white;
 	font-size: 2.25em;
 }
-.invis-link, .invis-link:hover, .invis-link:focus{
-	color: white;
-	text-decoration:none;
-}
+
+/*content*/
 .container-fluid{
 	padding-left: 0px;
 	margin: 0px;
@@ -60,12 +63,11 @@ h2, ul{
 .big-text{
 	position: relative;
 	margin-left: 15px;
-	font-size: 7.5em;
 	color: var(--text-on-image);
 	top: 40%;
 	left: 10%;
 }
-#lehigh-image{
+#lehigh-image, #lab-image{
 	padding: 15px;
 	padding-left: 0px;
 	position: relative;
@@ -77,11 +79,40 @@ h2, ul{
 }
 .text-box{
 	position: absolute;
-	top: 0%;
+	top: 35%;
 	padding: 15px;
 	right: 10%;
 	width: 40%;
 	height: 83.3%;
 	text-align: center;
+}
+@media only screen and (min-width: 1200px){
+	.big-text{
+		font-size: 7.5em;
+	}
+	#lehigh-image, #lab-image{
+		float: bottom;
+	}
+}
+@media only screen and (min-width: 768px)and (max-width: 1199px){
+	.big-text{
+		font-size: 5em;
+	}
+}
+@media only screen and (max-width:767px){
+	.big-text{
+		font-size: 3em;
+	}
+	#lehigh-image, #lab-image{
+		width: 100%;
+		left: 0%;
+		padding-left: 15px;
+	}
+	.text-box{
+		position: relative;
+		width: 100%;
+		text-align: left;
+		left: 1%;
+	}
 }
 
