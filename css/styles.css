@@ -1,9 +1,9 @@
 /*define variable*/
 :root{
-	--dark-blue: #198080;
-	--med-blue: #00b8cc;
-	--light-blue: #d9fbff;
-	--text-on-image: #ffffff;
+	--dark-brown: #252727;
+	--med-brown: #5e5752;
+	--light-brown: #ead5c4;
+	--text-on-image: #5e5752;
 }
 
 /*general*/
@@ -13,27 +13,32 @@
 	padding: 0;
 }
 html body{
-	background-color: var(--light-blue);
+	background-color: var(--med-brown);
 }
 .invis-link, .invis-link:hover, .invis-link:focus{
-	color: white;
+	color: #5e5752;
 	text-decoration:none;
 }
-
+.vis-link{
+	color:white;
+}
+.vis-link:hover, .invis-link:focus{
+	color:var(--light-brown);
+}
 /*banner*/
 .banner, #nav-banner{
 	padding: 0;
 	margin: 0px;
 	display: flex;
-	text-color:white;
+	color:#5e5752;
 	width:100%;
 	text-decoration:none;
 	background-color: transparent	;
-	text-shadow: 1px 1px 1px var(--dark-blue);
-	font-size: 1em;
+	text-shadow: 1px 1px 1px var(--dark-brown);
+	font-size: 1.25em;
 }
 #logo{
-	width: 100px;
+	width: 70px;
 	margin-left: 15px;
 	margin-top: 15px;
 	margin-bottom: 5px;
@@ -50,8 +55,24 @@ html body{
 }
 #front-page{
 	padding-left: 0px;
-	background-image: url("../photos/home.png");
-	height: 800px;
+	background: url("../photos/frontpage.jpg");
+	background-repeat:no-repeat;
+	background-size: 100% auto;
+	height: 1000px;
+}
+#about-page{
+	padding-left: 0px;
+	background: url("../photos/AboutMe.jpg");
+	background-repeat:no-repeat;
+	background-size: 100% auto;
+	height: 1000px;
+}
+#projects-page{
+	padding-left: 0px;
+	background: url("../photos/Projects.jpg");
+	background-repeat:no-repeat;
+	background-size: 100% auto;
+	height: 1000px;
 }
 .container-fluid img{
 	width: 100%;
@@ -64,8 +85,11 @@ html body{
 	position: relative;
 	margin-left: 15px;
 	color: var(--text-on-image);
-	top: 40%;
-	left: 10%;
+	top: 20%;
+	left: 1%;
+}
+#projects-text{
+	top:10%;
 }
 #lehigh-image, #lab-image{
 	padding: 15px;
@@ -83,8 +107,12 @@ html body{
 	padding: 15px;
 	right: 10%;
 	width: 40%;
-	height: 83.3%;
-	text-align: center;
+	height: 33.3%;
+	text-align: left;
+	border-radius:25px;
+}
+.header, .description{
+	color:white;
 }
 @media only screen and (min-width: 1200px){
 	.big-text{
