@@ -55,21 +55,21 @@ html body{
 }
 #front-page{
 	padding-left: 0px;
-	background: url("../photos/frontpage.jpg");
+	background: url("../photos/frontpage.JPG");
 	background-repeat:no-repeat;
 	background-size: 100% auto;
 	height: 1000px;
 }
 #about-page{
 	padding-left: 0px;
-	background: url("../photos/AboutMe.jpg");
+	background: url("../photos/aboutme.jpg");
 	background-repeat:no-repeat;
 	background-size: 100% auto;
 	height: 1000px;
 }
 #projects-page{
 	padding-left: 0px;
-	background: url("../photos/Projects.jpg");
+	background: url("../photos/Projects.JPG");
 	background-repeat:no-repeat;
 	background-size: 100% auto;
 	height: 1000px;
