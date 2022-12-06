@@ -68,7 +68,7 @@ html body{
 }
 #projects-page{
 	padding-left: 0px;
-	background: url("photos/projects.jpg");
+	background: url("photos/project.jpg");
 	background-repeat:no-repeat;
 	background-size: 100% auto;
 	height: 1000px;
@@ -111,18 +111,18 @@ html body{
 	top: 35%;
 	right: 10%;
 	width: 40%;
-	height: 33.3%;
 	text-align: left;
 }
 #content-page2 .content-image{
 	position:absolute;
 	right:10%;
 }
-#content-page2 .text-box{
+#test-text{
 	position: absolute;
-	top: -55%;
+	top: 35%;
 	left: 10%;
 	width: 40%;
+	height: 33.3%;
 	text-align: left;
 }
 .list{
