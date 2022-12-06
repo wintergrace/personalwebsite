@@ -54,21 +54,21 @@ html body{
 /*front pages*/
 #front-page{
 	padding-left: 0px;
-	background: url("photos/frontpage.JPG");
+	background: url("photos/frontpage.jpg");
 	background-repeat:no-repeat;
 	background-size: 100% auto;
 	height: 1000px;
 }
 #about-page{
 	padding-left: 0px;
-	background: url("photos/AboutMe.JPG");
+	background: url("photos/aboutme.jpg");
 	background-repeat:no-repeat;
 	background-size: 100% auto;
 	height: 1000px;
 }
 #projects-page{
 	padding-left: 0px;
-	background: url("photos/Projects.JPG");
+	background: url("photos/projects.jpg");
 	background-repeat:no-repeat;
 	background-size: 100% auto;
 	height: 1000px;
