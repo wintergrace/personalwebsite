@@ -15,6 +15,8 @@
 html body{
 	background-color: var(--med-brown);
 }
+
+/*links*/
 .invis-link, .invis-link:hover, .invis-link:focus{
 	color: #5e5752;
 	text-decoration:none;
@@ -25,6 +27,7 @@ html body{
 .vis-link:hover, .invis-link:focus{
 	color:var(--light-brown);
 }
+
 /*banner*/
 .banner, #nav-banner{
 	padding: 0;
@@ -48,11 +51,7 @@ html body{
 	font-size: 2.25em;
 }
 
-/*content*/
-.container-fluid{
-	padding-left: 0px;
-	margin: 0px;
-}
+/*front pages*/
 #front-page{
 	padding-left: 0px;
 	background: url("photos/frontpage.JPG");
@@ -74,10 +73,6 @@ html body{
 	background-size: 100% auto;
 	height: 1000px;
 }
-.container-fluid img{
-	width: 100%;
-	padding-left: 0px;
-}
 .home-image{
 	position: absolute;
 }
@@ -91,25 +86,55 @@ html body{
 #projects-text{
 	top:10%;
 }
-#lehigh-image, #lab-image{
-	padding: 15px;
-	padding-left: 0px;
+
+/*content*/
+.container-fluid, #content-page1, #content-page2{
+	padding-right: 0px;
+	padding-left:0px;
+	margin: 0px;
+	position:relative;
+}
+.text-box{	
+	width:40%;
+	padding:15px;
+}
+.content-image{
+	padding:15px;
 	position: relative;
 	width: 40%;
-	left: 10%;
 }
-.content-page{
-	position: relative;
+#content-page1 .content-image{
+	left:10%;
 }
-.text-box{
+#content-page1 .text-box{
 	position: absolute;
 	top: 35%;
-	padding: 15px;
 	right: 10%;
 	width: 40%;
 	height: 33.3%;
 	text-align: left;
-	border-radius:25px;
+}
+#content-page2 .content-image{
+	position:absolute;
+	right:10%;
+}
+#content-page2 .text-box{
+	position: absolute;
+	top: -55%;
+	left: 10%;
+	width: 40%;
+	text-align: left;
+}
+.list{
+	color:white;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+.description{
+	padding:0;
+	margin:0;
+	margin-bottom:0px;
 }
 .header, .description{
 	color:white;
@@ -144,3 +169,4 @@ html body{
 	}
 }
 
+*/
