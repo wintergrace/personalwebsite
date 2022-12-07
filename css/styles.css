@@ -97,6 +97,7 @@ html body{
 .text-box{	
 	width:40%;
 	padding:15px;
+	height:100%;
 }
 .content-image{
 	padding:15px;
@@ -108,21 +109,20 @@ html body{
 }
 #content-page1 .text-box{
 	position: absolute;
-	top: 35%;
 	right: 10%;
+	top:0%;
+	padding:15px;
 	width: 40%;
 	text-align: left;
 }
 #content-page2 .content-image{
-	position:absolute;
-	right:10%;
+	left:50%;
 }
-#test-text{
+#content-page2 .text-box{
 	position: absolute;
-	top: 35%;
 	left: 10%;
+	top:0%;
 	width: 40%;
-	height: 33.3%;
 	text-align: left;
 }
 .list{
