@@ -47,7 +47,7 @@ html body{
 	margin-bottom: 5px;
 }
 #bars{
-	color: white;
+	color: var(--med-brown);
 	font-size: 2.25em;
 }
 
@@ -86,7 +86,33 @@ html body{
 #projects-text{
 	top:10%;
 }
-
+@media only screen and (min-width: 1320px){
+	.big-text{
+		font-size:7.5em;
+	}
+}
+@media only screen and (min-width: 1200px) and (max-width:1319px){
+	.big-text{
+		font-size: 6.5em;
+	}
+}
+@media only screen and (min-width: 800px)and (max-width: 1199px){
+	.big-text{
+		font-size:6em;
+	}
+}
+@media only screen and (min-width: 768px)and (max-width: 799px){
+	.big-text{
+		top:8.5%;
+		font-size:4em;
+	}
+}
+@media only screen and (max-width:767px){
+	#front-page{
+		background: url("photos/frontpage-small.jpg");
+		background-size: 100%;
+	}
+}
 /*content*/
 .container-fluid, #content-page1, #content-page2{
 	padding-right: 0px;
@@ -125,48 +151,27 @@ html body{
 	width: 40%;
 	text-align: left;
 }
-.list{
-	color:white;
-	list-style-type:none;
-	margin:0;
-	padding:0;
-}
 .description{
 	padding:0;
 	margin:0;
 	margin-bottom:0px;
 }
+.reveal-scroll{
+	position:relative;
+	transform:translateY(150px);
+	opacity:0;
+	transition: 1.5s all ease;
+}
+.reveal-scroll.active{
+	transform:translateY(0px);
+	opacity:1;
+}
 .header, .description{
 	color:white;
 }
 @media only screen and (min-width: 1200px){
-	.big-text{
-		font-size: 7.5em;
-	}
-	#lehigh-image, #lab-image{
-		float: bottom;
-	}
 }
 @media only screen and (min-width: 768px)and (max-width: 1199px){
-	.big-text{
-		font-size: 5em;
-	}
 }
 @media only screen and (max-width:767px){
-	.big-text{
-		font-size: 3em;
-	}
-	#lehigh-image, #lab-image{
-		width: 100%;
-		left: 0%;
-		padding-left: 15px;
-	}
-	.text-box{
-		position: relative;
-		width: 100%;
-		text-align: left;
-		left: 1%;
-	}
 }
-
-*/
