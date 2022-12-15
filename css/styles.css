@@ -63,14 +63,12 @@ html body{
 	background: url("photos/aboutme.jpg");
 	background-repeat:no-repeat;
 	background-size: 100% auto;
-	height: 1000px;
 }
 #projects-page{
 	padding-left: 0px;
 	background: url("photos/projects.jpg");
 	background-repeat:no-repeat;
 	background-size: 100% auto;
-	height: 1000px;
 }
 .home-image{
 	position: absolute;
@@ -89,26 +87,55 @@ html body{
 	.big-text{
 		font-size:7.5em;
 	}
+	#projects-text{
+		top:10%;
+	}
 }
 @media only screen and (min-width: 1200px) and (max-width:1319px){
 	.big-text{
+		top:18%;
 		font-size: 6.5em;
 	}
 }
-@media only screen and (min-width: 800px)and (max-width: 1199px){
+@media only screen and (min-width:1061px) and (max-width:1199px){
 	.big-text{
+		top:20%;
 		font-size:6em;
 	}
 }
-@media only screen and (min-width: 768px)and (max-width: 799px){
+@media only screen and (min-width: 800px)and (max-width: 1060px){
+	.big-text{
+		top:8.5%;
+		font-size:5.5em;
+	}
+	#projects-text{
+		top:5%;
+	}
+}
+@media only screen and (min-width: 768px)and (max-width: 900px){
 	.big-text{
 		top:8.5%;
 		font-size:4em;
+	}
+	#projects-text{
+		top:3%;
 	}
 }
 @media only screen and (max-width:767px){
 	#front-page{
 		background: url("photos/frontpage-small.jpg");
+		background-size: 100%;
+		background-repeat:no-repeat;
+		display:inline-block;
+	}
+	#about-page{
+		background: url("photos/aboutme-small.jpg");
+		background-size: 100%;
+		background-repeat:no-repeat;
+		display:inline-block;
+	}
+	#projects-page{
+		background: url("photos/projects-small.jpg");
 		background-size: 100%;
 		background-repeat:no-repeat;
 		display:inline-block;
@@ -122,7 +149,7 @@ html body{
 }
 .reveal-scroll{
 	position:relative;
-	transform:translateY(200px);
+	transform:translateY(250px);
 	opacity:0;
 	transition: 2s all ease;
 }

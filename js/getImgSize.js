@@ -5,6 +5,8 @@ window.onload= function getImgSize() {
     height = width*3/2;
   }
   var div = document.getElementById("front-page");
+  if(!div) div = document.getElementById("about-page");
+  if(!div) div = document.getElementById("projects-page");
   var setHeightString = "height:" + height+"px";
   div.setAttribute("style",setHeightString);
 };
@@ -15,6 +17,8 @@ window.onresize = function getImgSize() {
     height = width*3/2;
   }
   var div = document.getElementById("front-page");
+  if(!div) div = document.getElementById("about-page");
+  if(!div) div = document.getElementById("projects-page");
   var setHeightString = "height:" + height+"px";
   div.setAttribute("style",setHeightString);
 };

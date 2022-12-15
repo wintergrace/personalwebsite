@@ -4,7 +4,10 @@ function revealOnScroll(){
       var height = window.innerHeight;
       var distanceTop = revealElements[i].getBoundingClientRect().top;
 
-      var elementVisible = 250;
+      var elementVisible = 200;
+      if(window.innerWidth<800){
+        elementVisible = 100;
+      }
       if(distanceTop < height-elementVisible) {
         revealElements[i].classList.add("active");
       }
