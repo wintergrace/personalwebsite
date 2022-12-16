@@ -153,12 +153,44 @@ html body{
 	opacity:0;
 	transition: 2s all ease;
 }
+.reveal-scroll.column-2{
+	transform:translateY(300px);
+}
+.reveal-scroll.column-3{
+	transform:translateY(350px);
+}
 .reveal-scroll.active{
 	transform:translateY(0px);
 	opacity:1;
 }
 .header, .description{
 	color:white;
+}
+#what-container{
+	padding:0;
+}
+.what-column{
+	color:white;
+	text-align:center;
+	font-size:2em;
+}
+#big-what-column{
+	font-size:3em;
+}
+.what-image{
+	width:100%;
+	border-radius:12px;
+}
+.what-image:hover{
+	opacity:0.1;
+}
+.what-description:hover{
+	opacity:1;
+}
+.what-description{
+	position:relative;
+	top:-50%;
+	opacity:0;
 }
 @media only screen and (min-width: 1200px){
 	.container-fluid, #content-page1, #content-page2{
