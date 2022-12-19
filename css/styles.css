@@ -287,6 +287,7 @@ html body{
 	#content-page1 .content-image{
 		left:0%;
 		width:100%;
+		padding-top:15px;
 		max-width: 100%;
 	}
 	#content-page1 .text-box{
